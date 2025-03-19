@@ -132,3 +132,8 @@ Dự án hỗ trợ học tiếng Anh
 
 </body>
 </html>
+echo "" > README.md
+git add README.md
+git commit -m "Clear content of README file"
+git push origin <branch-name>
+
