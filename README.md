@@ -103,3 +103,32 @@ Dự án hỗ trợ học tiếng Anh
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word of the Day</title>
+</head>
+<body>
+
+    <h1>Word of the Day</h1>
+    <p id="word"></p>
+    <p id="definition"></p>
+
+    <script>
+        const words = [
+            {word: "elated", definition: "very happy or excited"},
+            {word: "incredible", definition: "impossible to believe"},
+            {word: "lucid", definition: "clear and easy to understand"}
+        ];
+
+        let today = new Date();
+        let wordIndex = today.getDate() % words.length; // Get word for today based on the date
+
+        document.getElementById('word').innerText = words[wordIndex].word;
+        document.getElementById('definition').innerText = words[wordIndex].definition;
+    </script>
+
+</body>
+</html>
